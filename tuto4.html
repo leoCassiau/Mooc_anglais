@@ -33,6 +33,25 @@
   <body>
 
   <section id="container" >
+  	
+  	<script>
+	 function quiz(){
+		 var ok1 = document.getElementById("ok1");
+		 var ok2 = document.getElementById("ok2");
+		 var ok3 = document.getElementById("ok3");
+		 
+		 var score = 0;
+		 if(ok1.checked)
+			 score ++;
+		 if(ok2.checked)
+		 	score ++;
+		 if(ok3.checked)
+		 	score ++;
+		 
+		 document.getElementById("rrr").innerHTML ="You have "+score+"/3"; 
+	 }
+	 
+	 </script>
       <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
@@ -124,6 +143,33 @@
 					<p>Besides being powerful it is free, easy of use, light and has regular updates</p>
 					<a href="http://www.videolan.org/vlc/" target="_blank"><img src="./images/vlc1.png" alt="avast" class="images"/></a>
 					<p>When you install Windows, it offers you to use an audio and video player named Windows media. It's a good music player but it can't read all types of video format, so I encourage you to use VLC at least for videos</p>
+				
+				<h2>Quiz</h2>
+
+<p class="question">1. VLC is usefull for ...</p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" ><label for="q1a">Protect your computer against bads guys</label><br/>
+<input type="radio" name="q1" value="b" id ="ok1" ><label for="q1b">Watch your favorite movies</label><br/>
+<input type="radio" name="q1" value="c" ><label for="q1c">Eat beef</label><br/>
+</ul> 
+
+<p class="question">2. Avast is a...</p>
+<ul class="answers">
+<input type="radio" name="q2" value="a" ><label for="q2a">Malware</label><br/>
+<input type="radio" name="q2" value="b" id="ok2"><label for="q2b">Antivirus</label><br/>
+<input type="radio" name="q2" value="c" ><label for="q2c">Web site for children</label><br/>
+</ul> 
+
+<p class="question">3. Ccleaner...</p>
+<ul class="answers">
+<input type="radio" name="q3" value="a" ><label for="q3a">Is a Portuguese made</label><br/>
+<input type="radio" name="q3" value="b" ><label for="q3b">Is a programmation language</label><br/>
+<input type="radio" name="q3" value="c" id="ok3"><label for="q3c">Cleans your computer</label><br/>
+</ul> 
+
+<button onclick="quiz()">Validate</button>
+
+<p id="rrr""></p>
 				</div><!-- /col-lg-9 END SECTION MIDDLE -->
                   
                   
