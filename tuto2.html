@@ -36,7 +36,30 @@
       <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
-   
+   	   <script>
+	 function quiz(){
+		 var ok1 = document.getElementById("ok1");
+		 var ok2 = document.getElementById("ok2");
+		 var ok3 = document.getElementById("ok3");
+		 var ok4 = document.getElementById("ok4");
+		 var ok5 = document.getElementById("ok5");
+		 
+		 var score = 0;
+		 if(ok1.checked)
+			 score ++;
+		 if(ok2.checked)
+		 	score ++;
+		 if(ok3.checked)
+		 	score ++;
+		 if(ok4.checked)
+		 	score ++;
+		 if(ok5.checked)
+		 	score ++;	
+		 
+		 document.getElementById("rrr").innerHTML ="You have "+score+"/5"; 
+	 }
+	 
+	 </script>
       
       <!-- **********************************************************************************************************************************************************
       MAIN SIDEBAR MENU
@@ -99,9 +122,177 @@
                       
                       
                       
-                      
-                      tuto2
-                      
+<h1>How to choose your components</h1>
+
+<p>To build your computer, you need different components. The most important
+ones are: the motherboard, that connects all the parts together, the processor that handles your computation,
+the fan to keep everything cool, the case, that protects the other elements, the power supply to provide power to the computer,
+the hard disk(s) to store your data, Memory modules to have enough RAM</p>
+
+<p>Overall the most important thing is to choose components that go well
+together, now we will see more in detail how to choose each of these components.</p>
+
+<h2>The processor</h2>
+<p>A processor(or CPU) has 3 main caracteristics: performance, power usage,
+and price.To decide what king of processor to get, you first have to identify your
+needs.</p>
+
+<p>If you have basic usage of your computer(browsing the web, checking
+e-mail, editing documents) you don't need a high-end CPU and a dual core
+is sufficient.</p>
+
+<p>If your intent is to build a gaming pc, do scientific work, do heavy
+multimedia tasks such as 3D rendering or video editing, you will need a
+more performant, and expensive, CPU.</p>
+<center>
+<img src="./images/cpu.jpg" alt="CPU"  class="images"/>
+</center>
+<p>You will have to compromise between the performance the processor offers,
+its power usage and its price. You won't be able to win in every category:
+the most recent and advanced CPUs for exemple offer good performance with
+a low power need, but are expensive. A cheaper, powerful, but power hungry
+option is tempting but be careful of the extra cost in energy in the long
+run.</p>
+
+<p>For more precise informations, as well as up to date CPU comparisons, you
+can consult these links:</p>
+<a href="http://www.tomshardware.com/reviews/best-cpus,3986.html"></a> 
+<a href="http://cpuboss.com/compare-cpu"></a>
+
+
+<h2>The case</h2>
+
+<p>Computer cases exist in differents sizes and the right size for you is
+entirely dependant on your choice in components.</p>
+
+<p>The most common type of case is called mid tower or ATX, it will fit
+everything you need if you have an ATX motherboard or smaller and
+components of standard size.</p>
+<center>
+<img src="./images/atx.jpg" alt="atx"  class="images"/>
+</center>
+<p>Most power supply units and fans will fit, but take their size in
+consideration. The same thing applies for some graphics cards that can be
+very long, and optionnal equipment like cooling systems.</p>
+
+
+<p>The full tower cases will virtually fit anything you need, it can be
+useful if you want space to install the components easily, have special
+equipment like a water cooling system, or use multiple components.
+In short, if you have standard needs, you should prefer a mid tower.</p>
+<center>
+<img src="./images/full_tower.jpg" alt="fulltower" class="images"/>
+</center>
+
+<p>Cases are also available in the mini tower size, but you will be limited
+in the components you can fit and it will be more tedious to install them.
+If you are a beginner we advise you to avoid these.</p>
+
+<h2>The fan </h2>
+<p>A powerful computer will consume power and can reach high levels of heat when doing intensive calculations. 
+The main part concerned is the CPU that can easily be damaged by overheating. To counterbalance that,
+ a fan with sometimes an integrated heatsink, is placed upon the CPU to evacuate the heat and keep it at acceptable levels.</p>
+
+<center>
+<img src="./images/fan.jpeg" alt="fan"  class="images"/>
+<img src="./images/fan_heatsink.jpeg" alt="fan_heatsink" class="images"/>
+</center>
+
+<p>
+To choose the fan you need, you will have to take into consideration your CPU and look at the technical data to see how much it can heat up and what levels of heat are acceptable or dangerous. The value you are looking for is the TDP(Thermal Design Power), or maximal output in watts. Fortunately, CPU and fans use the same units so choose a fan with a TDP that exceeds your CPU's.
+</p>
+
+<p>You also need to take into consideration the case you chose, some are better at evacuating heat than others and some expensive models have integrated cooling systems. Lastly you will have to measure the space available to install the fan, as they come in different sizes.</p>
+
+<h2>The motherboard</h2>
+<p> The motherboard is the part that connects all the other elements together, so it is critical.</p>
+<p> You probably know that by now, when building a computer the size of the components matter. The motherboard is a perfect example as it is one of the biggest. The most common type of motherboard is ATX,  and the standard ATX will fit in mid tower cases(also called... ATX cases). Before considering buying a bigger motherboard, check the size of your case first.</p>
+<p> Not all motherboards are compatible with every CPU, you will have to check if the CPU socket is compatible. Usually an intel motherboard only accepts intel CPUs and the same applies for AMD.</p>
+
+<center>
+<img src="./images/motherboard.jpeg" alt="motherboard"  class="images"/>
+</center>
+<p> The other things to look for are the number and quality of ports, such as USB3, SATA, PCI-E, to connect you others devices.</p>
+
+<h2>The hard drive</h2>
+<p>To store your data you will need one, or several hard drives. You have a few things you need to be attentive to: the capacity and the type of disk.</p>
+<p>The capacity is easy: more is better, but also more expensive. Most users won't need more than 1Tb(1024Gb) of space.</p>
+<p>The majority of hard drives are HDD(Hard Disk Drive), this a standard and cheaper option</p>
+<p>Another type of drives is the SSD(Solid State Drive) that offers much better access speed at the cost of reduced capacity and bigger cost. Usually, SSDs users will have a HDD to store most of their data and a SSD to boot the operating system faster and store games for better performance.</p>
+
+<center>
+<img src="./images/hdd.jpeg" alt="hdd"  class="images"/>
+<img src="./images/ssd.jpeg" alt="ssd" class="images"/>
+</center>
+<p>Wether you use a SSD or not is entirely up to your budget and speed you require.</p>
+
+<h2>Memory modules</h2>
+<p>The memory modules are DRAM circuit boards installed on your motherboard. A computer has two types of memory: the ROM offered by the hard drives and the RAM offered by the memory modules.
+Both are necessary for computers, as seen before ROM will store your data and keep it, but RAM will store data only when it's powered on: it is turned off the data is lost.</p>
+<p>The RAM is way faster to access and your computer will use it to store data temporarily: more RAM capacity will allow your computer to run faster, in a certain limit.</p>
+<center>
+<img src="./images/ram.jpeg" alt="memory module"  class="images"/>
+</center>
+<p>When choosing memory modules you have two things to look for: the memory capacity and the speed. The memory capacity is displayed in Mb or Gb and indicates the amount of memory your computer can temporarily store at any time, the speed will tell you fast your computer will be able to access this memory. The speed is displayed with the satndard DDRX where X is a number.</p>
+<p>Generally speaking, you should prefer DDR3 and DDR4 modules, the later being more performant and expensive.</p>
+<p>Operating systems and games are more and more hungry for RAM and a capacity of 8Gb is comfortable for almost any usage. If you have special needs, such as video editing, 3D rendering and other memory intensive tasks, you should consider getting 16Gb.</p>
+
+<h2>The power supply unit</h2>
+<p>Lastly, you will have to power all the components you chose. A power supply unit(PSU) has a power output in watts: you want this output to exceed the cumulated TDP of all your components. Do not overlook any components, even fans need power.</p>
+<center>
+<img src="./images/psu.jpg" alt="PSU"  class="images"/>
+<img src="./images/efficiency.jpg" alt="PSU ratings"  class="images"/>
+</center>
+<p>You should pick up a PSU that fits your case, fortunately most of them have a standard ATX size, suitable for mid towers and bigger cases.</p>
+<p> It is important to check for the PCU efficiency too, visible in the shape of a certification such a as "80 plus", meaning the real power usage is 80% with 20% waste.</p>
+<p>The efficiency is a sign of quality and it is very important to have a good quality PSU. DO NOT buy a crappy PSU because of its price, you can damage your computer.</p>
+<p>A good standard to aim for is 80 bronze or above.</p>
+
+
+<h2>Conclusion</h2>
+<p>You have now all the information you need to choose the parts for your computer. To learn how to install them, check the next lesson. </p>
+
+
+<h2>Quiz</h2>
+
+<p class="question">1. ATX is a size standard for...</p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" ><label for="q1a">Computer cases only</label><br/>
+<input type="radio" name="q1" value="b" ><label for="q1b">Motherboards only</label><br/>
+<input type="radio" name="q1" value="c" id="ok1"><label for="q1c">Cases, motherboards and more</label><br/>
+</ul> 
+
+<p class="question">2. When choosing a PSU...</p>
+<ul class="answers">
+<input type="radio" name="q2" value="a" ><label for="q2a">Cheaper is better</label><br/>
+<input type="radio" name="q2" value="b" ><label for="q2b">Only the power ouput matters</label><br/>
+<input type="radio" name="q2" value="c" id="ok2"><label for="q2c">The power output and the efficiency matter</label><br/>
+</ul> 
+
+<p class="question">3. ROM refers to </p>
+<ul class="answers">
+<input type="radio" name="q3" value="a" ><label for="q3a">Volatile memory</label><br/>
+<input type="radio" name="q3" value="b" ><label for="q3b">Persistent memory</label><br/>
+<input type="radio" name="q3" value="c" id="ok3"><label for="q3c">The capital of Italy</label><br/>
+</ul> 
+
+<p class="question">4. I want a PC to check facebook, I need... </p>
+<ul class="answers">
+<input type="radio" name="q4" value="a" ><label for="q4a">16Gb of RAM, a 10 cores processor, a full tower with a watercooling system and SSDs</label><br/>
+<input type="radio" name="q4" value="b" id="ok4"><label for="q4b">A mid case tower, 4 to 8Gb of RAM, a dual core processor</label><br/>
+<input type="radio" name="q4" value="c" ><label for="q4c">A smartphone</label><br/>
+</ul> 
+
+<p class="question">5. A moterboard ...  </p>
+<ul class="answers">
+<input type="radio" name="q5" value="a" ><label for="q5a">Can fit any CPU</label><br/>
+<input type="radio" name="q5" value="b" ><label for="q5b">Are all the same size</label><br/>
+<input type="radio" name="q5" value="c" id="ok5" ><label for="q5c">Can only fit some CPU and have different sizes</label><br/>
+</ul> 
+
+<button onclick="quiz()">Validate</button>
+
+<p id="rrr""></p>                      
                       
                       
                       </p>
